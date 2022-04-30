@@ -1,0 +1,141 @@
+html, body{
+    background: whitesmoke;
+    font-family: sans-serif;
+}
+.bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    align-content: center;
+    width: auto;
+    background-color: rgb(29, 29, 31);
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+   /* border: 10px solid black;*/
+
+    
+
+}
+.container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+padding: 0%;
+color: black;
+background-color:rgb(223, 219, 219);
+/*border: 10px solid blue;*/
+}
+
+.container .win{
+   /* border: 10px solid orange;*/
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.container .win img{
+    display: inline;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.container .grow img{
+    display: inline;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.container .live{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container .live img{
+    width: 50%;
+
+}
+
+h1{
+    /*border: 10px solid red;*/
+    width: auto;
+    text-align: center;
+    color: black;
+    letter-spacing: 3px;
+}
+
+h3{
+   /* border: 10px solid purple;*/
+    width: auto;
+    text-align: center;
+    font-weight:500;
+    letter-spacing: 5px;
+    color: black;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+ul{
+    font-weight: lighter;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    list-style: none;
+}
+
+li{
+    width: 100%;
+    letter-spacing: .5;
+    padding: 5px;
+}
+
+p{
+    font-weight: bolder;
+}
+
+div a{
+    text-decoration: none;
+    color:white;
+}
+
+.link {
+  /*  border: 10px solid pink;*/
+    text-align: center;
+}
+
+.learnmore{
+    color: blue;
+    width: 100%;
+    font-weight: lighter;
+  /*  border: 10px solid yellow;*/
+
+}
+
+.learnmore:hover{
+    color: black;
+}
+
+.buy{
+    color: blue;
+    width: 100%;
+    font-weight: lighter;
+  /*  border: 10px solid greenyellow;*/
+
+}
+
+.buy:hover{
+    color: black;
+}
