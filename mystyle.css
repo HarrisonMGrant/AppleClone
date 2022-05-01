@@ -1,14 +1,24 @@
 html, body{
     background: whitesmoke;
     font-family: sans-serif;
+    margin: auto 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .bar {
+        font-size: 0.5em;
+        padding: 0;
+        gap: 1px;
+    }
+}
+
 .bar {
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
     align-content: center;
     width: auto;
-    background-color: rgb(29, 29, 31);
+    background-color: rgb(60, 60, 61);
     padding: 15px;
     text-decoration: none;
     color: white;
@@ -17,50 +27,47 @@ html, body{
     
 
 }
-.container{
-display: flex;
+.cover{
+display: inline-flex;
 flex-direction: column;
 justify-content: center;
 align-content: center;
-padding: 0%;
+text-align: center;
+padding: auto 0;
+width: 100%;
 color: black;
 background-color:rgb(223, 219, 219);
 /*border: 10px solid blue;*/
 }
 
-.container .win{
-   /* border: 10px solid orange;*/
-    max-width: 100%;
-    height: auto;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
+.grid-wrapper{
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    margin: auto 0;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 }
 
-.container .win img{
-    display: inline;
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+.three, .eight{
+    grid-column-start: span 2;
 }
 
-.container .grow img{
-    display: inline;
-    flex-wrap: nowrap;
+.box{
+    padding: 0;
+    margin: 0;
+}
+
+.box > img {
     width: 100%;
+    height: 100%;
 }
 
-.container .live{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.cover img{
+   padding: 0;
+   width: 100%;
+   margin: auto 0;
 }
 
-.container .live img{
-    width: 50%;
-
-}
 
 h1{
     /*border: 10px solid red;*/
@@ -68,19 +75,23 @@ h1{
     text-align: center;
     color: black;
     letter-spacing: 3px;
+    margin-bottom: 0%;
 }
 
-h3{
+h2{
    /* border: 10px solid purple;*/
     width: auto;
     text-align: center;
-    font-weight:500;
+    font-weight: 300;
     letter-spacing: 5px;
+    margin-top: 0%;
+    padding: 0%;
     color: black;
 }
 
 footer{
     display: flex;
+    flex-wrap: nowrap;
     width: 100%;
     font-size: 12px;
 }
@@ -111,11 +122,6 @@ div a{
     color:white;
 }
 
-.link {
-  /*  border: 10px solid pink;*/
-    text-align: center;
-}
-
 .learnmore{
     color: blue;
     width: 100%;
@@ -126,6 +132,7 @@ div a{
 
 .learnmore:hover{
     color: black;
+    text-decoration: underline;
 }
 
 .buy{
@@ -136,6 +143,11 @@ div a{
 
 }
 
+.search{
+    margin-left: auto;
+}
+
 .buy:hover{
     color: black;
+    text-decoration: underline;
 }
